@@ -1,8 +1,8 @@
 spring:
   datasource:
     # jdbc:h2:~/datajpa -> 최초 생성시
-    url: jdbc:h2:tcp://localhost/~/datajpa
-#    url: jdbc:h2:mem:datajpa
+#    url: jdbc:h2:tcp://localhost/~/datajpa
+    url: jdbc:h2:mem:datajpa
     username: sa
     password:
     driver-class-name: org.h2.Driver
