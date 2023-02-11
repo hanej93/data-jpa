@@ -16,6 +16,15 @@ spring:
         #        show_sql: true
         format_sql: true
 
+  data:
+    web:
+      pageable:
+        default-page-size: 10 # pageable 글로벌 설정
+        max-page-size: 2000
+        # page를 1부터 시작해줌(기존 0에서 시작)
+        # ※ page를 -1 해주는 역할 -> pageable 객체와 다르게 설정 비교적 사용하지 말것
+        one-indexed-parameters: true
+
     devtools:
       livereload:
         enabled: true
